@@ -4,114 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Project Future - Kelley School of Business</title>
+    <title>HTML + CSS</title>
 
-    <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
     />
 
-    <!-- Font Awesome CDN -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-pA+4Xt0I/..."
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-
     <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <!-- Bootstrap Navbar with Logo -->
-    <nav class="navbar navbar-default">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="index.html">
-            <img src="images/kelleylogo.png" alt="Kelley School of Business Logo" class="navbar-logo" />
-          </a>
-        </div>
-
-        <div class="collapse navbar-collapse" id="navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="index.html"><strong>Project Future</strong></a></li>
-            <li><a href="about_us.html">About Us</a></li>
-            <li><a href="contact_us.html">Contact Us</a></li>
-            <li><a href="applicant-home.html">Management Committee</a></li>
-            <li><a href="member-home.html">Participants</a></li>
-            <li><a href="client-home.html">Clients</a></li>
-            <li><a href="employee-home.html">Technical Committee</a></li>
-          </ul>
-        </div>
-      </div>
+    <header>
+      <img src="images/KSBLOGO.png" />
+    </header>
+    <nav class="nav-class">
+      <a href="index.html"><strong>Project Future </strong> </a> |
+      <a href="about_us.html">About Us</a> |
+      <a href="contact_us.html">Contact Us</a> |
+      <a href="applicant-home.html">Applicants</a> |
+      <a href="member-home.html">Participants</a> |
+      <a href="client-home.html">Clients</a> |
+      <a href="employee-home.html">Technical Committee</a> |
     </nav>
 
-
     <main>
-      <h1>Accept or Reject Applicant</h1>
+      <h1>Accept or Reject Applicant Page</h1>
     </main>
-        <div class="container mt-5">
-          <table class="table table-bordered table-condensed table-hover">
-            <thead>
-              <tr>
-                <th>Action</th>
-                <th>Full Name</th>
-                <th>Email</th>
-                <th>Phone</th>
-                <th>Current Status</th>
-                <th>Year</th>
-                <th>Major</th>
-                <th>Resume</th>
-                <th>Application Letter</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>
-                  <button
-                    class="btn btn-success btn-sm mr-2"
-                    onclick="window.location.href='accept-student.html'"
-                  >
-                    Accept
-                  </button>
-                  <button
-                    class="btn btn-danger btn-sm"
-                    onclick="window.location.href='reject-student.html'"
-                  >
-                    Reject
-                  </button>
-                </td>
-                <td>Jim Davis</td>
-                <td>jdavis@iu.edu</td>
-                <td>952-229-0293</td>
-                <td>Undergrad</td>
-                <td>2025</td>
-                <td>Information Systems &amp; Business Analytics</td>
-                <td>
-                  <a href="#" class="btn btn-link btn-sm">View Resume</a>
-
-                </td>
-                <td>
-                  <a href="#" class="btn btn-link btn-sm"
-                    >View Application Letter</a
-                  >
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </body>
-    </html>
-
+    <h2>
+      On this page, we should display a form view of student applicant; include
+      two buttons to accept/reject
+    </h2>
     <footer>
       <p>
         Front-End-Prototype | Phone: xxx-xxx-xxxx | 1275 E 10th St, Bloomington,
