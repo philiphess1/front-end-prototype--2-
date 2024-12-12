@@ -7,12 +7,25 @@
   font-style: normal;
 }
 
+html {
+  height: 100%;
+}
+
 /* Set the desired font for the entire page */
 body {
   font-family: 'BentonSansBold', Helvetica, Arial, sans-serif;
   background-color: #f9f9f9;
   margin: 0;
   padding: 0;
+  min-height: 100%;
+  position: relative;
+  padding-bottom: 80px; /* Height of the footer plus some spacing */
+  box-sizing: border-box;
+}
+
+/* Ensure main content area doesn't overlap with footer */
+main {
+  padding-bottom: 20px; /* Add some spacing before footer */
 }
 
 /* Enhanced h1 Styling */
@@ -126,13 +139,16 @@ h1 {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Footer Styles */
+/* Updated Footer Styles */
 footer {
   background-color: #243142;
   color: white;
   text-align: center;
   padding: 20px 0;
-  margin-top: 40px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px; /* Fixed height for the footer */
 }
 
 /* Responsive Adjustments */
