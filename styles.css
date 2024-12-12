@@ -1,4 +1,4 @@
-/* Import Custom Font (if not already done) */
+/* Import Custom Font */
 @font-face {
   font-family: 'BentonSansBold';
   src: url('fonts/BentonSansBold.woff2') format('woff2'),
@@ -10,29 +10,21 @@
 /* Set the desired font for the entire page */
 body {
   font-family: 'BentonSansBold', Helvetica, Arial, sans-serif;
-  background-color: #f9f9f9; /* Light background for contrast */
+  background-color: #f9f9f9;
   margin: 0;
   padding: 0;
 }
 
 /* Enhanced h1 Styling */
 h1 {
-  /* Typography */
   font-family: 'BentonSansBold', Helvetica, Arial, sans-serif;
   font-size: 36px;
   font-weight: bold;
   color: #243142;
-  
-  /* Alignment and Spacing */
   text-align: center;
   margin: 40px 0 20px 0;
-  
-  /* Decoration */
-  text-decoration: none;
   border-bottom: 2px solid #243142;
   padding-bottom: 10px;
-  
-  /* Optional: Add a slight text shadow for depth */
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
@@ -54,10 +46,10 @@ h1 {
   text-decoration: underline;
 }
 
-/* Box Container */
+/* Container */
 .container {
-  max-width: 1200px; /* Adjust as needed */
-  margin: 0 auto; /* Center the container */
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /* Enhanced Box Styles */
@@ -66,36 +58,20 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
-  /* Responsive Sizing */
-  width: 100%; /* Make boxes full width within columns */
-  height: 250px; /* Increased height to accommodate icons and text */
-  
-  /* Background and Borders */
-  background-color: #ffffff; /* Clean white background */
+  width: 100%;
+  height: 250px;
+  background-color: #ffffff;
   border: 2px solid #ccc;
   border-radius: 12px;
-  
-  /* Spacing */
   padding: 20px;
-  margin: 15px 0; /* Vertical margin since horizontal spacing handled by Bootstrap */
-  
-  /* Typography */
+  margin: 15px 0;
   text-align: center;
-  text-decoration: none;
   font-size: 18px;
   font-weight: 600;
   color: #243142;
-  
-  /* Visual Enhancements */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
-  
-  /* Cursor */
   cursor: pointer;
-  
-  /* Ensure the box takes full height of the column */
-  height: 100%;
 }
 
 .box:hover {
@@ -103,7 +79,7 @@ h1 {
   color: #ffffff;
   transform: translateY(-5px) scale(1.05);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-  text-decoration: none;
+  text-decoration: none; /* Removes underline on hover */
 }
 
 .box:active {
@@ -114,12 +90,40 @@ h1 {
 /* Font Awesome Icon Styling */
 .box i {
   margin-bottom: 15px;
-  color: #243142; /* Initial icon color matching text */
+  color: #243142;
   transition: color 0.3s ease;
 }
 
 .box:hover i {
-  color: #ffffff; /* Icon color changes on hover */
+  color: #ffffff;
+}
+
+/* Submit Button Specific Styling */
+.submit-button {
+  display: inline-block;  /* Added to make link behave like a button */
+  text-decoration: none;  /* Remove default link underline */
+  background-color: #243142;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 30px;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  margin-top: 20px;  /* Add some space above the button */
+}
+
+.submit-button:hover {
+  background-color: #1e2a38;
+  color: #ffffff;  /* Keep text white on hover */
+  text-decoration: none;  /* Ensure no underline appears on hover */
+  transform: translateY(-2px);  /* Subtle lift effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Add shadow on hover */
+}
+
+.submit-button:active {
+  transform: translateY(0);  /* Press effect */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Footer Styles */
@@ -128,14 +132,11 @@ footer {
   color: white;
   text-align: center;
   padding: 20px 0;
-  position: relative; /* Changed from fixed to relative to avoid overlapping content */
-  width: 100%;
   margin-top: 40px;
 }
 
 /* Responsive Adjustments */
 @media (max-width: 992px) {
-  /* Tablets: Reduce box size */
   .box {
     height: 220px;
     font-size: 17px;
@@ -143,7 +144,6 @@ footer {
 }
 
 @media (max-width: 768px) {
-  /* Mobile Landscape: Stack boxes vertically */
   .box {
     height: 200px;
     font-size: 16px;
@@ -151,7 +151,6 @@ footer {
 }
 
 @media (max-width: 480px) {
-  /* Mobile Portrait: Further adjust for small screens */
   .box {
     height: 180px;
     font-size: 15px;
@@ -159,6 +158,79 @@ footer {
   
   .box i {
     margin-bottom: 10px;
-    font-size: 36px; /* Reduce icon size on smaller screens */
+    font-size: 36px;
+  }
+  
+  .submit-button {
+    padding: 8px 20px;
+    font-size: 16px;
+  }
+}
+
+/* Feature Box Styling */
+.feature-box {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 30px;
+  margin: 20px 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Info Section Styling */
+.info-section {
+  margin-bottom: 30px;
+}
+
+.section-title {
+  color: #243142;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #243142;
+}
+
+.info-content {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.info-content p {
+  margin: 12px 0;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #495057;
+}
+
+.info-content p strong {
+  color: #243142;
+}
+
+/* Add hover effect to info content */
+.info-content:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .feature-box {
+    padding: 20px;
+  }
+  
+  .section-title {
+    font-size: 20px;
+  }
+  
+  .info-content {
+    padding: 15px;
+  }
+  
+  .info-content p {
+    font-size: 14px;
   }
 }
