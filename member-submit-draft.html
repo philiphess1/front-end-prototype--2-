@@ -3,64 +3,95 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>HTML + CSS</title>
-
+    <title>Participant Draft Document Upload - Project Future</title>
     <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
       rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
     />
-
-    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .navbar {
+        background-color: #243142;
+        padding: 1rem;
+      }
+      .navbar a {
+        color: white !important;
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+      }
+      .navbar a:hover {
+        color: #ccc !important;
+      }
+      .main-content {
+        padding: 2rem;
+      }
+      .section-header {
+        color: #990000;
+        margin-top: 2rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 2px solid #990000;
+      }
+      .info-card {
+        background-color: #f8f9fa;
+        border-radius: 8px;
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      .logo {
+        max-width: 200px;
+        margin-bottom: 1rem;
+      }
+      .interview-status {
+        background-color: #e3f2fd;
+        color: #0d47a1;
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+        display: inline-block;
+        margin-bottom: 1rem;
+      }
+    </style>
   </head>
   <body>
-    <header>
-      <img src="images/KSBLOGO.png" />
-    </header>
-    <nav class="nav-class">
-      <a href="index.html"><strong>Project Future </strong> </a> |
-      <a href="about_us.html">About Us</a> |
-      <a href="contact_us.html">Contact Us</a> |
-      <a href="applicant-home.html">Applicants</a> |
-      <a href="member-home.html">Participants</a> |
-      <a href="client-home.html">Clients</a> |
-      <a href="employee-home.html">Technical Committee</a> |
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <img
+          src="/api/placeholder/200/50"
+          alt="Kelley School Logo"
+          class="logo"
+        />
+        <div class="navbar-nav ms-auto">
+          <a href="index.html">Project Future</a>
+          <a href="about_us.html">About Us</a>
+          <a href="contact_us.html">Contact Us</a>
+          <a href="applicant-home.html">Applicants</a>
+          <a href="member-home.html">Participants</a>
+          <a href="client-home.html">Clients</a>
+          <a href="employee-home.html">Technical Committee</a>
+        </div>
+      </div>
     </nav>
+
+    <div class="container main-content">
+      <h1 class="mb-4">Upload Project Draft Document</h1>
+      <h2 class="section-header">Participant Information</h2>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="info-card">
+            <div class="mb-2"><strong>Participant Name:</strong> Jim Davis</div>
+            <div class="mb-2">
+              <strong>Email:</strong> contact@techsolutions.com
+            </div>
+            <div class="mb-2"><strong>Team:</strong> ABC</div>
+            <div class="mb-2">
+              <strong>Client Name:</strong> Tech Solutions Inc.
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="text-center py-4 text-muted">
+      Front-End-Prototype | Phone: xxx-xxx-xxxx | 1275 E 10th St, Bloomington,
+      IN 47405
+    </footer>
   </body>
-</html>
-<main>
-    <h1>Upload Project Draft Document</h1>
-    <form action="" method="post">
-        <label for="studentname">Participant Name:</label>
-        <select name="studentname" id="studentname">
-            <option value="tgeddess">Jim Davis</option>
-            <option value="bgoss">Alan Carter</option>
-            <option value="jsmith">Emily White</option>
-            <option value="hstyles">Sarah Clark</option>
-            <option value="ewalker">Jack Scott</option>
-        </select><br>
-        <label for="clientname">Client Name:</label>
-        <select name="clientname" id="clientname">
-            <option value="ABC">Company ABC</option>
-            <option value="BCD">Company BCD</option>
-            <option value="CDE">Company CDE</option>
-            <option value="DEF">Company DEF</option>
-            <option value="EFG">Company EFG</option>
-        </select><br>
-        <label for="projdraft">Project Draft: </label>
-        <input type="file" name="projdraft" id="projdraft"><br>
-        <br>
-        <a class="button" href="tydoc.html"> Submit </a>
-    </form>
-</main>
-<footer>
-  <p>
-    Front-End-Prototype | Phone: xxx-xxx-xxxx | 1275 E 10th St, Bloomington,
-    IN 47405
-  </p>
-</footer>
-</body>
 </html>
