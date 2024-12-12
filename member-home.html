@@ -1,55 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>HTML + CSS</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Participant Homepage</title>
 
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-    />
+  <!-- Bootstrap CSS -->
+  <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+  />
 
-    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+  <!-- Font Awesome CDN -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-pA+4Xt0I/..."
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
 
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header>
-      <img src="images/KSBLOGO.png" />
-    </header>
-    <nav class="nav-class">
-      <a href="index.html"><strong>Project Future </strong> </a> |
-      <a href="about_us.html">About Us</a> |
-      <a href="contact_us.html">Contact Us</a> |
-      <a href="applicant-home.html">Applicants</a> |
-      <a href="member-home.html">Participants</a> |
-      <a href="client-home.html">Clients</a> |
-      <a href="employee-home.html">Technical Committee</a> |
-    </nav>
-  </body>
-</html>
-<main>
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+
+  <!-- Bootstrap JS -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <img src="images/KSBLOGO.png" alt="KSB Logo" />
+  </header>
+  
+  <nav class="nav-class">
+    <a href="index.html"><strong>Project Future</strong></a> |
+    <a href="about_us.html">About Us</a> |
+    <a href="contact_us.html">Contact Us</a> |
+    <a href="applicant-home.html">Management Committee</a> |
+    <a href="member-home.html">Participants</a> |
+    <a href="client-home.html">Clients</a> |
+    <a href="employee-home.html">Technical Committee</a> |
+  </nav>
+
+  <main>
     <h1>Participant Homepage</h1>
     <div class="container">
-        <a href="member-status.html" class="box"
-          >Check Participant Status</a
-        >
-        <a href="member-submit-draft.html" class="box"
-          >Upload Project Draft Document</a
-        >
-        <a href="member-submit-final.html" class="box"
-          >Submit Final Project Document</a
-        >
+      <div class="row">
+        <div class="col-md-4">
+          <a href="member-status.html" class="box">
+            <i class="fas fa-tasks fa-3x"></i>
+            <span>Check Participant Status</span>
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="member-submit-draft.html" class="box">
+            <i class="fas fa-file-upload fa-3x"></i>
+            <span>Upload Project Draft</span>
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="member-submit-final.html" class="box">
+            <i class="fas fa-file-signature fa-3x"></i>
+            <span>Submit Final Project</span>
+          </a>
+        </div>
       </div>
-</main>
-<footer>
-  <p>
-    Front-End-Prototype | Phone: xxx-xxx-xxxx | 1275 E 10th St, Bloomington,
-    IN 47405
-  </p>
-</footer>
+    </div>
+  </main>
+  
+  <footer>
+    <p>
+      Front-End-Prototype | Phone: xxx-xxx-xxxx | 1275 E 10th St, Bloomington,
+      IN 47405
+    </p>
+  </footer>
 </body>
 </html>

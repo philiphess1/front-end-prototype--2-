@@ -4,24 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>HTML + CSS</title>
+    <title>Project Future - Kelley School of Business</title>
 
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
     />
 
-    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-pA+4Xt0I/..."
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header>
-      <img src="images/KSBLOGO.png" />
+      <img src="images/KSBLOGO.png" alt="Kelley School of Business Logo" />
     </header>
+    
     <nav class="nav-class">
-      <a href="index.html"><strong>Project Future </strong> </a> |
+      <a href="index.html"><strong>Project Future</strong></a> |
       <a href="about_us.html">About Us</a> |
       <a href="contact_us.html">Contact Us</a> |
       <a href="applicant-home.html">Management Committee</a> |
@@ -31,56 +40,53 @@
     </nav>
 
     <main>
-      <img src="images/banner-plus-kelley-ft.jpg" width="75%" />
+      <div class="container">
+        <h1>Welcome to Project Future</h1>
+        
+        <div class="feature-box">
+          <div class="row">
+            <div class="col-md-12 text-center mb-4">
+              <img src="images/banner-plus-kelley-ft.jpg" class="img-responsive center-block" alt="Kelley Project Future Banner" style="max-width: 75%; margin-bottom: 30px;" />
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="col-md-12">
+              <div class="info-section">
+                <h3 class="section-title">The Kelley MSIS Program's Project Future</h3>
+                <div class="info-content">
+                  <p>Project Future is an initiative led by the MS in Information Systems Program at the Kelley School of Business at Indiana University. This project aims to support small businesses and NGOs transitioning to online-based operations, a need that became especially critical during the global pandemic.</p>
+                  
+                  <p>Teams of student volunteers, guided by their professors and mentors, work directly with these organizations to provide technology-based consulting and solutions. The goal is to streamline the process of client intake, team assignment, and delivery of results, ensuring that both the organizations and the students benefit from the experience.</p>
+                  
+                  <p>Through Project Future, students gain hands-on experience in consulting, while organizations receive vital assistance in adapting to the digital age.</p>
+                </div>
+              </div>
+            </div>
+          </div>
 
-      <h2>The Kelley MSIS Program’s Project Future</h2>
-      <p>
-        Project Future is an initiative led by the MS in Information Systems
-        Program at the Kelley School of Business at Indiana University. This
-        project aims to support small businesses and NGOs transitioning to
-        online-based operations, a need that became especially critical during
-        the global pandemic. Teams of student volunteers, guided by their
-        professors and mentors, work directly with these organizations to
-        provide technology-based consulting and solutions. The goal is to
-        streamline the process of client intake, team assignment, and delivery
-        of results, ensuring that both the organizations and the students
-        benefit from the experience. Through Project Future, students gain
-        hands-on experience in consulting, while organizations receive vital
-        assistance in adapting to the digital age.
-      </p>
-
-      <table class="table-bordered table table-condensed table-hover">
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Major</th>
-            <th>Address</th>
-            <th>Comments</th>
-            <th>Applied?</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Jim</td>
-            <td>IS</td>
-            <td>123 East Road</td>
-            <td>Hello</td>
-            <td>Will add control here</td>
-          </tr>
-          <tr>
-            <td>Bill</td>
-            <td>Analytics</td>
-            <td>321 West Road</td>
-            <td>Yo</td>
-            <td>Will add control here</td>
-          </tr>
-        </tbody>
-        <tfoot>
-          <tr>
-            <td colspan="5">This is the footer row of the table</td>
-          </tr>
-        </tfoot>
-      </table>
+          <div class="row mt-4">
+            <div class="col-md-4">
+              <a href="about_us.html" class="box">
+                <i class="fas fa-info-circle fa-3x"></i>
+                <span>Learn More About Us</span>
+              </a>
+            </div>
+            <div class="col-md-4">
+              <a href="contact_us.html" class="box">
+                <i class="fas fa-envelope fa-3x"></i>
+                <span>Get in Touch</span>
+              </a>
+            </div>
+            <div class="col-md-4">
+              <a href="client-home.html" class="box">
+                <i class="fas fa-handshake fa-3x"></i>
+                <span>Become a Client</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
     <footer>

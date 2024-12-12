@@ -1,67 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>HTML + CSS</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Submit Final Project - Project Future</title>
 
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-    />
+  <!-- Bootstrap CSS -->
+  <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+  />
 
-    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+  <!-- Font Awesome CDN -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-pA+4Xt0I/..."
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
 
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header>
-      <img src="images/KSBLOGO.png" />
-    </header>
-    <nav class="nav-class">
-      <a href="index.html"><strong>Project Future </strong> </a> |
-      <a href="about_us.html">About Us</a> |
-      <a href="contact_us.html">Contact Us</a> |
-      <a href="applicant-home.html">Management Committee</a> |
-      <a href="member-home.html">Participants</a> |
-      <a href="client-home.html">Clients</a> |
-      <a href="employee-home.html">Technical Committee</a> |
-    </nav>
-  </body>
-</html>
-<main>
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+
+  <!-- Bootstrap JS -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <img src="images/KSBLOGO.png" alt="KSB Logo" />
+  </header>
+  
+  <nav class="nav-class">
+    <a href="index.html"><strong>Project Future</strong></a> |
+    <a href="about_us.html">About Us</a> |
+    <a href="contact_us.html">Contact Us</a> |
+    <a href="applicant-home.html">Management Committee</a> |
+    <a href="member-home.html">Participants</a> |
+    <a href="client-home.html">Clients</a> |
+    <a href="employee-home.html">Technical Committee</a> |
+  </nav>
+
+  <main>
     <h1>Submit Final Project Document</h1>
-    <form action="" method="post">
-        <label for="studentname">Participant Name:</label>
-        <select name="studentname" id="studentname">
-            <option value="tgeddess">Jim Davis</option>
-            <option value="bgoss">Alan Carter</option>
-            <option value="jsmith">Emily White</option>
-            <option value="hstyles">Sarah Clark</option>
-            <option value="ewalker">Jack Scott</option>
-        </select><br>
-        <label for="clientname">Client Name:</label>
-        <select name="clientname" id="clientname">
-            <option value="ABC">Company ABC</option>
-            <option value="BCD">Company BCD</option>
-            <option value="CDE">Company CDE</option>
-            <option value="DEF">Company DEF</option>
-            <option value="EFG">Company EFG</option>
-        </select><br>
-        
-        <label for="projdraft">Final Document: </label>
-        <input type="file" name="projfinal" id="projfinal"><br>
-        <br>
-        <a class="button" href="tydoc.html"> Submit </a>
-    </form>
-</main>
-<footer>
-  <p>
-    Front-End-Prototype | Phone: xxx-xxx-xxxx | 1275 E 10th St, Bloomington,
-    IN 47405
-  </p>
-</footer>
+    <div class="container">
+      <div class="feature-box">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="info-section">
+              <h3 class="section-title">Project Information</h3>
+              <div class="info-content">
+                <div class="form-group">
+                  <label for="studentname">Participant Name</label>
+                  <select class="form-control" name="studentname" id="studentname">
+                    <option value="tgeddess">Jim Davis</option>
+                    <option value="bgoss">Alan Carter</option>
+                    <option value="jsmith">Emily White</option>
+                    <option value="hstyles">Sarah Clark</option>
+                    <option value="ewalker">Jack Scott</option>
+                  </select>
+                </div>
+                
+                <div class="form-group mt-4">
+                  <label for="clientname">Client Name</label>
+                  <select class="form-control" name="clientname" id="clientname">
+                    <option value="ABC">Company ABC</option>
+                    <option value="BCD">Company BCD</option>
+                    <option value="CDE">Company CDE</option>
+                    <option value="DEF">Company DEF</option>
+                    <option value="EFG">Company EFG</option>
+                  </select>
+                </div>
+              </div>
+
+              <h3 class="section-title">Submission Requirements</h3>
+              <div class="info-content">
+                <p><i class="fas fa-check-circle text-success"></i> All sections completed</p>
+                <p><i class="fas fa-check-circle text-success"></i> Client approval obtained</p>
+                <p><i class="fas fa-check-circle text-success"></i> Technical review passed</p>
+                <p><i class="fas fa-exclamation-circle text-warning"></i> Final submission pending</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="info-section">
+              <h3 class="section-title">Final Document Upload</h3>
+              <div class="info-content">
+                <div class="form-group">
+                  <label for="projfinal">
+                    <i class="fas fa-file-upload"></i> 
+                    Upload Final Document
+                  </label>
+                  <input type="file" name="projfinal" id="projfinal" class="form-control" required>
+                </div>
+
+                <div class="form-group mt-4">
+                  <label for="finalComments">Final Comments</label>
+                  <textarea id="finalComments" class="form-control" rows="4" placeholder="Add any final notes or comments about your project..."></textarea>
+                </div>
+
+                <div class="checkbox mt-4">
+                  <label>
+                    <input type="checkbox" required> 
+                    I confirm this is the final version of my project
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-4">
+          <div class="col-md-12 text-center">
+            <a href="tydoc.html" class="submit-button">
+              <i class="fas fa-paper-plane me-2"></i>
+              Submit Final Project
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  <footer>
+    <p>
+      Front-End-Prototype | Phone: xxx-xxx-xxxx | 1275 E 10th St, Bloomington,
+      IN 47405
+    </p>
+  </footer>
 </body>
 </html>

@@ -1,99 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Participant Status Page - Project Future</title>
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <style>
-      .navbar {
-        background-color: #243142;
-        padding: 1rem;
-      }
-      .navbar a {
-        color: white !important;
-        text-decoration: none;
-        padding: 0.5rem 1rem;
-      }
-      .navbar a:hover {
-        color: #ccc !important;
-      }
-      .main-content {
-        padding: 2rem;
-      }
-      .section-header {
-        color: #990000;
-        margin-top: 2rem;
-        padding-bottom: 0.5rem;
-        border-bottom: 2px solid #990000;
-      }
-      .info-card {
-        background-color: #f8f9fa;
-        border-radius: 8px;
-        padding: 1.5rem;
-        margin-bottom: 1.5rem;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      }
-      .logo {
-        max-width: 200px;
-        margin-bottom: 1rem;
-      }
-      .interview-status {
-        background-color: #e3f2fd;
-        color: #0d47a1;
-        padding: 0.5rem 1rem;
-        border-radius: 4px;
-        display: inline-block;
-        margin-bottom: 1rem;
-      }
-    </style>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg">
-      <div class="container">
-        <img
-          src="/api/placeholder/200/50"
-          alt="Kelley School Logo"
-          class="logo"
-        />
-        <div class="navbar-nav ms-auto">
-          <a href="index.html">Project Future</a>
-          <a href="about_us.html">About Us</a>
-          <a href="contact_us.html">Contact Us</a>
-          <a href="applicant-home.html">Applicants</a>
-          <a href="member-home.html">Participants</a>
-          <a href="client-home.html">Clients</a>
-          <a href="employee-home.html">Technical Committee</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Participant Status</title>
+
+  <!-- Bootstrap CSS -->
+  <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+  />
+
+  <!-- Font Awesome CDN -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-pA+4Xt0I/..."
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+
+  <!-- Bootstrap JS -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <img src="images/KSBLOGO.png" alt="KSB Logo" />
+  </header>
+  
+  <nav class="nav-class">
+    <a href="index.html"><strong>Project Future</strong></a> |
+    <a href="about_us.html">About Us</a> |
+    <a href="contact_us.html">Contact Us</a> |
+    <a href="applicant-home.html">Management Committee</a> |
+    <a href="member-home.html">Participants</a> |
+    <a href="client-home.html">Clients</a> |
+    <a href="employee-home.html">Technical Committee</a> |
+  </nav>
+
+  <main>
+    <h1>Participant Status</h1>
+    <div class="container">
+      <div class="feature-box">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="info-section">
+              <h3 class="section-title">Participant Information</h3>
+              <div class="info-content">
+                <p><strong>Name:</strong> Jim Davis</p>
+                <p><strong>Email:</strong> jdavis@email.com</p>
+                <p><strong>Team:</strong> ABC</p>
+                <p><strong>Client:</strong> Tech Solutions Inc.</p>
+              </div>
+
+              <h3 class="section-title">Project Timeline</h3>
+              <div class="info-content">
+                <p><strong>Start Date:</strong> January 15, 2024</p>
+                <p><strong>Draft Due:</strong> March 1, 2024</p>
+                <p><strong>Final Due:</strong> April 15, 2024</p>
+                <p><strong>Status:</strong> In Progress</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="info-section">
+              <h3 class="section-title">Document Status</h3>
+              <div class="info-content">
+                <p>
+                  <i class="fas fa-check-circle text-success"></i>
+                  <strong>Project Proposal:</strong> Submitted
+                </p>
+                <p>
+                  <i class="fas fa-clock text-warning"></i>
+                  <strong>Draft Document:</strong> Pending
+                </p>
+                <p>
+                  <i class="fas fa-clock text-warning"></i>
+                  <strong>Final Document:</strong> Not Started
+                </p>
+              </div>
+
+              <h3 class="section-title">Next Steps</h3>
+              <div class="info-content">
+                <p>
+                  <i class="fas fa-exclamation-circle text-primary"></i>
+                  Submit project draft by March 1, 2024
+                </p>
+                <p>
+                  <i class="fas fa-calendar-alt text-primary"></i>
+                  Schedule mid-project review with advisor
+                </p>
+                <p>
+                  <i class="fas fa-users text-primary"></i>
+                  Attend next team meeting on February 1, 2024
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </nav>
 
-    <div class="container main-content">
-      <h1 class="mb-4">Participant Status</h1>
-      <div class="interview-status">Status: Project Draft Submitted</div>
-
-      <h2 class="section-header">Participant Information</h2>
-      <div class="row">
-        <div class="col-md-12">
-          <div class="info-card">
-            <div class="mb-2"><strong>Participant Name:</strong> Jim Davis</div>
-            <div class="mb-2">
-              <strong>Email:</strong> contact@techsolutions.com
-            </div>
-            <div class="mb-2"><strong>Team:</strong> ABC</div>
-            <div class="mb-2">
-              <strong>Client Name:</strong> Tech Solutions Inc.
-            </div>
+        <div class="row mt-4">
+          <div class="col-md-12 text-center">
+            <a href="member-submit-draft.html" class="submit-button">
+              <i class="fas fa-file-upload me-2"></i>
+              Upload Draft Document
+            </a>
+          </div>
         </div>
       </div>
     </div>
-
-    <footer class="text-center py-4 text-muted">
+  </main>
+  
+  <footer>
+    <p>
       Front-End-Prototype | Phone: xxx-xxx-xxxx | 1275 E 10th St, Bloomington,
       IN 47405
-    </footer>
-  </body>
+    </p>
+  </footer>
+</body>
 </html>
