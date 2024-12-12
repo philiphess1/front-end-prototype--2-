@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML + CSS</title>
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .form-section {
+        background: #f9f9f9;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 4px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      }
+      .section-title {
+        color: #990000;
+        margin-bottom: 20px;
+        text-align: left;
+      }
+      .form-group {
+        margin-bottom: 20px;
+        text-align: left;
+      }
+      .submit-button {
+        width: auto;
+        height: auto;
+        padding: 10px 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="images/KSBLOGO.png" />
+    </header>
+    <nav class="nav-class">
+      <a href="index.html"><strong>Project Future </strong> </a> |
+      <a href="about_us.html">About Us</a> |
+      <a href="contact_us.html">Contact Us</a> |
+      <a href="applicant-home.html">Applicants</a> |
+      <a href="member-home.html">Participants</a> |
+      <a href="client-home.html">Clients</a> |
+      <a href="employee-home.html">Technical Committee</a> |
+    </nav>
+
+    <div class="container">
+        <h1>Input Interview Details - Tech Solutions Inc.</h1>
+        
+        <div class="feature-box">
+            <form action="client-interview-view.html" method="get">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-section">
+                            <h3 class="section-title">Goals</h3>
+                            <div class="form-group">
+                                <label>Primary Goals:</label>
+                                <textarea class="form-control" name="goals" rows="4" 
+                                    placeholder="Enter the company's main objectives" required></textarea>
+                            </div>
+                        
+                            <h3 class="section-title">KPIs</h3>
+                            <div class="form-group">
+                                <label>Key Performance Indicators:</label>
+                                <textarea class="form-control" name="kpis" rows="4" 
+                                    placeholder="Enter measurable metrics for success" required></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="form-section">
+                            <h3 class="section-title">Current Systems</h3>
+                            <div class="form-group">
+                                <label>Existing Technology:</label>
+                                <textarea class="form-control" name="systems" rows="4" 
+                                    placeholder="List current technology and systems in use" required></textarea>
+                            </div>
+                        
+                            <h3 class="section-title">Timeline</h3>
+                            <div class="form-group">
+                                <label>Project Timeline:</label>
+                                <select class="form-control" name="timeline" required>
+                                    <option value="">Select timeline...</option>
+                                    <option value="1-2">1-2 months</option>
+                                    <option value="3-4">3-4 months</option>
+                                    <option value="5-6">5-6 months</option>
+                                    <option value="6+">6+ months</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <button type="submit" class="box submit-button">Submit Interview Details</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        Front-End-Prototype | Phone: xxx-xxx-xxxx | 1275 E 10th St, Bloomington, IN 47405
+    </footer>
+  </body>
+</html>

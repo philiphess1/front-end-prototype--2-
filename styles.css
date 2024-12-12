@@ -1,116 +1,164 @@
+/* Import Custom Font (if not already done) */
+@font-face {
+  font-family: 'BentonSansBold';
+  src: url('fonts/BentonSansBold.woff2') format('woff2'),
+       url('fonts/BentonSansBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Set the desired font for the entire page */
+body {
+  font-family: 'BentonSansBold', Helvetica, Arial, sans-serif;
+  background-color: #f9f9f9; /* Light background for contrast */
+  margin: 0;
+  padding: 0;
+}
+
+/* Enhanced h1 Styling */
 h1 {
+  /* Typography */
+  font-family: 'BentonSansBold', Helvetica, Arial, sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  color: #243142;
+  
+  /* Alignment and Spacing */
+  text-align: center;
+  margin: 40px 0 20px 0;
+  
+  /* Decoration */
+  text-decoration: none;
+  border-bottom: 2px solid #243142;
+  padding-bottom: 10px;
+  
+  /* Optional: Add a slight text shadow for depth */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation Styles */
+.nav-class {
+  background-color: #243142;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.nav-class a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-class a:hover {
   text-decoration: underline;
 }
 
-body {
-  font: inherit;
-}
-
-thead,
-tfoot {
-  background-color: #990000;
-  color: white;
-}
-
-.navbar-custom {
-  background-color: #243142;
-  border: none;
-  border-radius: 0;
-  margin-bottom: 0;
-}
-
-.navbar-custom .navbar-nav > li > a {
-  color: white;
-}
-
-.navbar-custom .navbar-brand {
-  color: white;
-}
-
-/* Add these styles for the hamburger menu */
-.navbar-custom .navbar-toggle {
-  border-color: white;
-}
-
-.navbar-custom .navbar-toggle .icon-bar {
-  background-color: white;
-}
-
-.navbar-custom .navbar-toggle:hover,
-.navbar-custom .navbar-toggle:focus {
-  background-color: #334152;
-}
-
-.hero-section {
-  background: #990000;
-  color: white;
-  padding: 60px 0;
-}
-
-.feature-box {
-  padding: 20px;
-  text-align: center;
-  margin: 15px 0;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
-
+/* Box Container */
 .container {
-  display: flex;
-  justify-content: space-around;
-  grid-template-columns: repeat(2, 1fr);
-  flex-wrap: wrap;
-  margin: 20px;
+  max-width: 1200px; /* Adjust as needed */
+  margin: 0 auto; /* Center the container */
 }
 
+/* Enhanced Box Styles */
 .box {
-  width: 150px;
-  height: 150px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #f0f0f0;
+  
+  /* Responsive Sizing */
+  width: 100%; /* Make boxes full width within columns */
+  height: 250px; /* Increased height to accommodate icons and text */
+  
+  /* Background and Borders */
+  background-color: #ffffff; /* Clean white background */
   border: 2px solid #ccc;
-  border-radius: 8px;
-  margin: 10px;
+  border-radius: 12px;
+  
+  /* Spacing */
+  padding: 20px;
+  margin: 15px 0; /* Vertical margin since horizontal spacing handled by Bootstrap */
+  
+  /* Typography */
   text-align: center;
   text-decoration: none;
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  color: #333;
-  transition: transform 0.3s, background-color 0.3s;
-}
-
-/* Hover effect */
-.box:hover {
-  background-color: #990000;
-  color: white;
-  transform: scale(1.1);
-}
-
-/* Add these styles to your existing stylesheet */
-table {
-  width: 100%;
-  margin: 20px 0;
-  border-collapse: collapse;
-}
-
-td, th {
-  padding: 8px;
-  border: 1px solid #ddd;
-}
-
-.status-badge {
-  padding: 4px 8px;
-  border-radius: 4px;
-  background-color: #f0f0f0;
-}
-
-.view-button {
-  background-color: #990000;
-  color: white;
-  border: none;
-  padding: 4px 12px;
-  border-radius: 4px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #243142;
+  
+  /* Visual Enhancements */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+  
+  /* Cursor */
   cursor: pointer;
+  
+  /* Ensure the box takes full height of the column */
+  height: 100%;
+}
+
+.box:hover {
+  background-color: #243142;
+  color: #ffffff;
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+}
+
+.box:active {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Font Awesome Icon Styling */
+.box i {
+  margin-bottom: 15px;
+  color: #243142; /* Initial icon color matching text */
+  transition: color 0.3s ease;
+}
+
+.box:hover i {
+  color: #ffffff; /* Icon color changes on hover */
+}
+
+/* Footer Styles */
+footer {
+  background-color: #243142;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  position: relative; /* Changed from fixed to relative to avoid overlapping content */
+  width: 100%;
+  margin-top: 40px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  /* Tablets: Reduce box size */
+  .box {
+    height: 220px;
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Mobile Landscape: Stack boxes vertically */
+  .box {
+    height: 200px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Mobile Portrait: Further adjust for small screens */
+  .box {
+    height: 180px;
+    font-size: 15px;
+  }
+  
+  .box i {
+    margin-bottom: 10px;
+    font-size: 36px; /* Reduce icon size on smaller screens */
+  }
 }
