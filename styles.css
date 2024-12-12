@@ -234,3 +234,67 @@ footer {
     font-size: 14px;
   }
 }
+/* Updated Navbar Styles */
+.navbar {
+  background-color: #243142;
+  border: none;
+  border-radius: 0;
+  margin-bottom: 0;
+  min-height: 80px; /* Adjust based on your logo height */
+}
+
+.navbar-brand {
+  padding: 5px 15px;
+  height: auto;
+}
+
+.navbar-logo {
+  height: 70px; /* Adjust based on your needs */
+  width: auto;
+}
+
+.navbar-nav {
+  margin-left: 15px;
+}
+
+.navbar-nav > li > a {
+  color: white !important;
+  padding: 30px 20px; /* Vertically center with logo */
+  line-height: 20px;
+}
+
+.navbar-nav > li > a:hover {
+  background-color: #1e2a38 !important;
+}
+
+.navbar-toggle {
+  margin-top: 22px; /* Center hamburger with taller navbar */
+  border-color: white !important;
+}
+
+.navbar-toggle .icon-bar {
+  background-color: white !important;
+}
+
+@media (max-width: 768px) {
+  .navbar-brand {
+    padding: 5px 15px;
+  }
+  
+  .navbar-logo {
+    height: 50px; /* Slightly smaller on mobile */
+  }
+  
+  .navbar-nav > li > a {
+    padding: 10px 20px;
+    border-bottom: 1px solid #1e2a38;
+  }
+  
+  .navbar-collapse {
+    background-color: #243142;
+  }
+  
+  .navbar-nav {
+    margin: 0 -15px;
+  }
+}
